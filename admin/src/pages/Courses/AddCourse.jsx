@@ -164,7 +164,7 @@ function AddCourse() {
             </label>
             <div className="mt-2">
               <Editor
-                apiKey="kzqt5sbjasvjje7w5crtnn39d5z3pv1pf8ns7l01pgp9ogoh"
+                apiKey=""
                 onInit={(_evt, editor) => (longDescriptionRef.current = editor)}
                 initialValue="<h3>Enter course details here</h3>"
                 init={{
