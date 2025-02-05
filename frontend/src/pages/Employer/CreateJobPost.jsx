@@ -86,7 +86,7 @@ function CreateJobPost() {
             </label>
             <div className="mt-2">
               <Editor
-                apiKey="kzqt5sbjasvjje7w5crtnn39d5z3pv1pf8ns7l01pgp9ogoh"
+                apiKey=""
                 onInit={(_evt, editor) => (jobDetailsRef.current = editor)}
                 initialValue="<h3>Enter Job details here</h3>"
                 init={{
