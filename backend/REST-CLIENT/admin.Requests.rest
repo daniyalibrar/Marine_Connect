@@ -1,0 +1,128 @@
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJmaXJzdE5hbWUiOiJhZG1pbiIsImxhc3ROYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGVtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNDE4MjM5NSwiZXhwIjoxNzM0MjY4Nzk1fQ.UxyfZuxy2I-9I4ZnxYtoCF3Zn30JV9juNyoNwS6uwME
+
+### Register/Create Admin User
+POST http://localhost:4000/admin/register
+Content-Type: application/json
+
+{
+    "firstName": "admin",
+    "lastName": "admin",
+    "email": "admin@email.com",
+    "password": "admin",
+    "role": "admin"
+}
+
+### Login Admin User
+POST http://localhost:4000/admin/login
+Content-Type: application/json
+
+{
+    "email": "admin@email.com",
+    "password": "admin"
+}
+
+### Get Admin Profile
+GET http://localhost:4000/admin/profile
+Authorization: {{token}}
+
+### Get all users
+GET http://localhost:4000/admin/users
+Authorization: {{token}}
+
+### Get user by id
+GET http://localhost:4000/admin/users/1
+Authorization: {{token}}
+
+### Register/Create a new User
+POST http://localhost:4000/admin/users
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "firstName": "daniyal",
+    "lastName": "ibrar",
+    "email": "employer@email.com",
+    "password": "employer",
+    "role": "employer"
+}
+
+### Update user by id
+PUT http://localhost:4000/admin/users/3
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "firstName": "daniyal",
+    "lastName": "ibrar",
+    "email": "student@email.com",
+    "role": "student"
+}
+
+### Delete user by id
+DELETE  http://localhost:4000/admin/users/3
+Content-Type: application/json
+Authorization: {{token}}
+
+### Create Course Category
+POST http://localhost:4000/admin/course-categories
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "categoryName": "Safety and Survival Training",
+    "categoryDescription": "Safety is paramount in maritime operations. This category provides the essential training for personal survival techniques, fire safety, first aid, and emergency response procedures. Courses include practical skills such as donning life jackets, survival craft operation, firefighting techniques, and how to manage medical emergencies at sea. This category is vital for preparing maritime professionals to handle emergencies in harsh and unpredictable environments."
+}
+
+### Get all Course Categories
+GET http://localhost:4000/admin/course-categories
+Authorization: {{token}}
+
+### DELETE Course Category by id
+DELETE http://localhost:4000/admin/course-categories/2
+Authorization: {{token}}
+
+### Create Course 
+POST http://localhost:4000/admin/courses
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "title": "Course Title Another title for course where this title is multiline",
+    "image": "http://localhost:4000/admin/courses",
+    "shortDescription": "Safety and Survival Training. Safety is paramount in maritime operations. This category provides the essential training for personal survival techniques, fire safety, first aid, and emergency response procedures. Safety and Survival Training. Safety is paramount in maritime operations. This category provides the essential training for personal survival techniques, fire safety, first aid, and emergency response procedures. Safety is paramount in maritime operations.",
+    "longDescription": "Safety is paramount in maritime operations. This category provides the essential training for personal survival techniques, fire safety, first aid, and emergency response procedures. Courses include practical skills such as donning life jackets, survival craft operation, firefighting techniques, and how to manage medical emergencies at sea. This category is vital for preparing maritime professionals to handle emergencies in harsh and unpredictable environments.",
+    "level": "Beginner",
+    "category_id": 1,
+    "durationHours": 10
+}
+
+### Get all Course Courses
+GET http://localhost:4000/admin/courses
+Authorization: {{token}}
+
+### Get all Course Applications
+GET http://localhost:4000/admin/courses/applications
+Authorization: {{token}}
+
+### Get Course by id
+GET http://localhost:4000/admin/courses/1
+Authorization: {{token}}
+
+### Update a Course by id
+PUT http://localhost:4000/admin/courses/5
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "title": "Course Title",
+    "image": "http://localhost:4000/admin/courses",
+    "shortDescription": "Safety and Survival Training. Safety is paramount in maritime operations.",
+    "longDescription": "Safety is paramount in maritime operations",
+    "level": "Beginner",
+    "category_id": 1,
+    "durationHours": 10
+}
+
+### DELETE Course by id
+DELETE http://localhost:4000/admin/courses/6
+Authorization: {{token}}
