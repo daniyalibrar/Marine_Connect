@@ -1,6 +1,6 @@
 MERN Stack Education System and Job Portal.
 
-Backend:
+Backend:<br/>
 NodeJS, ExpressJS, MySQL, Sequelize ORM, JWT-Token Based Authentication, Multer file Uploads, Cloudinary for Images and Videos Storage.
 
 Frontend:
