@@ -1,10 +1,10 @@
-MERN Stack Education System and Job Portal.
+<h1>MERN Stack Education System and Job Portal.</h1>
 
-Backend:<br/>
-NodeJS, ExpressJS, MySQL, Sequelize ORM, JWT-Token Based Authentication, Multer file Uploads, Cloudinary for Images and Videos Storage.
+<h3>Backend</h3>
+<p>NodeJS, ExpressJS, MySQL, Sequelize ORM, JWT-Token Based Authentication, Multer file Uploads, Cloudinary for Images and Videos Storage.</p>
 
-Frontend:
-HTML, CSS, JavaScript, TailwindCSS, Headless UI, ReactJS, Redux, React Router, Axios, Rich Text Editor - TinyMCE.
+<h3>Frontend</h3>
+<p>HTML, CSS, JavaScript, TailwindCSS, Headless UI, ReactJS, Redux, React Router, Axios, Rich Text Editor - TinyMCE.</p>
 
-Admin:
-HTML, CSS, JavaScript, TailwindCSS, Headless UI, ReactJS, Redux, React Router, Axios, Rich Text Editor - TinyMCE.
+<h3>Admin</h3>
+<p>HTML, CSS, JavaScript, TailwindCSS, Headless UI, ReactJS, Redux, React Router, Axios, Rich Text Editor - TinyMCE.</p>
